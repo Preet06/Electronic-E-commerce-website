@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+
+
+
+
+
+   #slider {
+	overflow: hidden;
+}
+
+@keyframes slider {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
+#slider figure {
+	width:300%;
+	position: relative;
+	animation: 9s slider infinite;
+}
+
+
+#slider figure img {
+	width: 33.333333333%;
+	height : 500px;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+$secondary-3: #DB4444;
+
+
+
+.rectangle{
+    height: 40px;
+    width: 20px;
+    background-color: $secondary-3;
+}   
+
+.category{
+    color: #DB4444;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.browseCategory{
+    color: var(--Text2, #000);
+/* Heading/36PX SemiBold */
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 48px; /* 133.333% */
+letter-spacing: 1.44px;
+}
+
+
+
+.cart-img{
+    height: 180px;
+    width: 172px;
+}
+
+
+  
+  
+
+
+.cards .button-add-to-cart{
+    display: none;
+}
+
+.cards:hover .button-add-to-cart{
+    display: flex;
+    flex-direction: column;
+}
