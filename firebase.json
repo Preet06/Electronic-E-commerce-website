@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "electronic_ecom",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

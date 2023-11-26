@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "electronic-ecommerce-ba6e2": {
+      "hosting": {
+        "electronic_ecom": [
+          "electronic-ecommerce-ba6e2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "electronic-ecommerce-ba6e2"
+  }
+}
