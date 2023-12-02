@@ -94,7 +94,9 @@
 
     <div >
       <div  class="d-flex justify-content-between flex-wrap">
-        <div >
+
+
+        <div *ngFor="let item of product">
           <div
             class="cards d-flex flex-column"
             style="height: 322px; width: 270px;margin-top: 60px"
@@ -109,7 +111,7 @@
             >
 
               <div>
-                <img class="cart-img" src="assets/laptop.svg" />
+                <img class="cart-img" src="{{item.Image}}" />
               </div>
 
               <div>
@@ -123,7 +125,7 @@
                       background: var(--Button, #000);
                       color: white;
                     "
-                  >
+                  (click)="addtoCart(item)">
                     Add To Cart
                   </button>
                 </div>

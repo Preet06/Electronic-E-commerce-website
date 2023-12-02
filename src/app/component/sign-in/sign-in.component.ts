@@ -25,6 +25,6 @@ export class SignInComponent implements OnInit {
     this.auth.googleSignIn();
   }
 
-  // forgotPassword(){}
+  forgotPassword(){}
 
 }
