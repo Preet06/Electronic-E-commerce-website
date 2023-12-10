@@ -24,56 +24,51 @@
         <div class="browseCategory">Browse By Category</div>
       </div>
 
-      <div class="d-flex justify-content-between flex-wrap">
-        <div
-          class="d-inline-flex flex-column border border-light-subtle"
-          style="padding: 25px 56px 24px 55px"
-        >
+      <div class="d-flex justify-content-between flex-wrap ">
+        <div class="d-inline-flex flex-column border border-light-subtle">
+
+          <button
+          class="browseByCategory  "
+          style="padding: 25px 56px 24px 55px ; background-color: white; border: none;"
+          (click)="filterCategory('Mobile')" >
           <img src="assets/category-cellPhone.svg" />
           <div class="d-flex justify-content-center">
             <div>Phone</div>
           </div>
+        </button>
+
+        </div>
+        
+       
+        <div class="d-inline-flex flex-column border border-light-subtle">
+
+          <button
+          class="browseByCategory  "
+          style="padding: 25px 56px 24px 55px ; background-color: white; border: none;"
+          (click)="filterCategory('Watch')" >
+          <img src="assets/category-smartWatch.svg" />
+          <div class="d-flex justify-content-center">
+            <div>Watch</div>
+          </div>
+        </button>
+
         </div>
 
-        <div
-          class="d-inline-flex flex-column border border-light-subtle"
-          style="padding: 25px 56px 24px 55px"
-        >
-          <img src="assets/category-cellPhone.svg" />
+        <div class="d-inline-flex flex-column border border-light-subtle">
+
+          <button
+          class="browseByCategory  "
+          style="padding: 25px 56px 24px 55px ; background-color: white; border: none;"
+          (click)="filterCategory('Headphone')" >
+          <img src="assets/category-Headphone.svg" />
           <div class="d-flex justify-content-center">
-            <div>Phone</div>
+            <div>HeadPhone</div>
           </div>
+        </button>
+
         </div>
 
-        <div
-          class="d-inline-flex flex-column border border-light-subtle"
-          style="padding: 25px 56px 24px 55px"
-        >
-          <img src="assets/category-cellPhone.svg" />
-          <div class="d-flex justify-content-center">
-            <div>Phone</div>
-          </div>
-        </div>
 
-        <div
-          class="d-inline-flex flex-column border border-light-subtle"
-          style="padding: 25px 56px 24px 55px"
-        >
-          <img src="assets/category-cellPhone.svg" />
-          <div class="d-flex justify-content-center">
-            <div>Phone</div>
-          </div>
-        </div>
-
-        <div
-          class="d-inline-flex flex-column border border-light-subtle"
-          style="padding: 25px 56px 24px 55px"
-        >
-          <img src="assets/category-cellPhone.svg" />
-          <div class="d-flex justify-content-center">
-            <div>Phone</div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -145,7 +140,7 @@
                   line-height: 24px;
                 "
               >
-                Asus i5 laptop
+                {{item.Title}}
               </div>
               <div
                 style="
@@ -158,168 +153,7 @@
                   line-height: 24px;
                 "
               >
-                $700
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div >
-          <div
-            class="cards d-flex flex-column"
-            style="height: 322px; width: 270px;margin-top: 60px"
-          >
-            <div
-              class="cards-show d-flex flex-column align-items-center justify-content-center"
-              style="
-                height: 250px;
-                width: 270px;
-                background-color: rgb(172, 172, 253);
-              "
-            >
-
-              <div>
-                <img class="cart-img" src="assets/remote.svg" />
-              </div>
-
-              <div>
-
-                <div class="button-add-to-cart" style="margin-top: 26px;">
-                  <button
-                    style="
-                      width: 270px;
-                      height: 41px;
-                      border-radius: 0px 0px 4px 4px;
-                      background: var(--Button, #000);
-                      color: white;
-                    "
-                  >
-                    Add To Cart
-                  </button>
-                </div>
-              </div>
-              
-            </div>
-            
-
-            <div>
-              <div
-                style="
-                  color: #000;
-                  font-family: Poppins;
-                  font-size: 16px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 24px;
-                "
-              >
-                Asus i5 laptop
-              </div>
-              <div
-                style="
-                  color: var(--Secondary-2, #db4444);
-                  /* Title/16PX Medium */
-                  font-family: Poppins;
-                  font-size: 16px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 24px;
-                "
-              >
-                $700
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-        <div >
-          <div
-            class="cards d-flex flex-column"
-            style="height: 322px; width: 270px;margin-top: 60px"
-          >
-            <div
-              class="cards-show d-flex flex-column align-items-center justify-content-center"
-              style="
-                height: 250px;
-                width: 270px;
-                background-color: rgb(172, 172, 253);
-              "
-            >
-
-              <div>
-                <img class="cart-img" src="assets/remote.svg" />
-              </div>
-
-              <div>
-
-                <div class="button-add-to-cart" style="margin-top: 26px;">
-                  <button
-                    style="
-                      width: 270px;
-                      height: 41px;
-                      border-radius: 0px 0px 4px 4px;
-                      background: var(--Button, #000);
-                      color: white;
-                    "
-                  >
-                    Add To Cart
-                  </button>
-                </div>
-              </div>
-              
-            </div>
-            
-
-            <div>
-              <div
-                style="
-                  color: #000;
-                  font-family: Poppins;
-                  font-size: 16px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 24px;
-                "
-              >
-                Asus i5 laptop
-              </div>
-              <div
-                style="
-                  color: var(--Secondary-2, #db4444);
-                  /* Title/16PX Medium */
-                  font-family: Poppins;
-                  font-size: 16px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 24px;
-                "
-              >
-                $700
+               {{item.Price}}
               </div>
             </div>
           </div>
@@ -343,73 +177,12 @@
 
 
 
-        <div >
-          <div
-            class="cards d-flex flex-column"
-            style="height: 322px; width: 270px;margin-top: 60px"
-          >
-            <div
-              class="cards-show d-flex flex-column align-items-center justify-content-center"
-              style="
-                height: 250px;
-                width: 270px;
-                background-color: rgb(172, 172, 253);
-              "
-            >
 
-              <div>
-                <img class="cart-img" src="assets/laptop.svg" />
-              </div>
 
-              <div>
 
-                <div class="button-add-to-cart" style="margin-top: 26px;">
-                  <button
-                    style="
-                      width: 270px;
-                      height: 41px;
-                      border-radius: 0px 0px 4px 4px;
-                      background: var(--Button, #000);
-                      color: white;
-                    "
-                  >
-                    Add To Cart
-                  </button>
-                </div>
-              </div>
-              
-            </div>
-            
 
-            <div>
-              <div
-                style="
-                  color: #000;
-                  font-family: Poppins;
-                  font-size: 16px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 24px;
-                "
-              >
-                Asus i5 laptop
-              </div>
-              <div
-                style="
-                  color: var(--Secondary-2, #db4444);
-                  /* Title/16PX Medium */
-                  font-family: Poppins;
-                  font-size: 16px;
-                  font-style: normal;
-                  font-weight: 500;
-                  line-height: 24px;
-                "
-              >
-                $700
-              </div>
-            </div>
-          </div>
-        </div>
+
+
 
 
        

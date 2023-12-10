@@ -15,11 +15,13 @@ export class AuthService implements OnInit{
   {  }
   ngOnInit(): void {
     this.check()
+    this.getIds()
   }
 
   public cartList: any = [];
 
-  public addToCartStore = new BehaviorSubject<any>([]);
+  public addToCartStore = new BehaviorSubject<any>([]); 
+  public checks = false
 
 
 
@@ -46,11 +48,59 @@ export class AuthService implements OnInit{
 
 
 // get data from firebase
-   getProduct(){
-    const cityRef = this.fs.collection('Product');
-    const doc =  cityRef.get()
-    return doc
+   getProduct(filter_category:any){
+
+    if(!filter_category)
+    {
+      console.log("Nothing")
+      const cityRef = this.fs.collection('Product');
+      const doc =  cityRef.get()
+      return doc
+    }
+    else
+    {
+      console.log("Something")
+      const expensesCollection = this.fs.collection('/Product', ref => ref.orderBy("Price"));
+      console.log(expensesCollection);
+      const doc = this.fs.collection("Product",ref=>ref.where('Category','==',filter_category).orderBy("Price")).get()
+      return doc;
+    }
+    
   }
+
+
+  getIds(){
+  const citiesRef = this.fs.collection('Product');
+// const snapshot =  citiesRef.where('capital', '==', true).get();
+
+
+
+    // .subscribe(data=>data.forEach(el=>console.log(el.data())));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   addtoCartService(_productCart: any)
   {
@@ -99,8 +149,11 @@ export class AuthService implements OnInit{
   
    show = false;
    }
-   return show;
+   this.checks = show
+   console.log("show",show)
  });
+ console.log(this.checks)
+ return this.checks
 
  
 }
