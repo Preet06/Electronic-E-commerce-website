@@ -79,7 +79,37 @@
     
         <button type="button" class="btn btn-outline-secondary"  style="padding: 16px 48px 16px 48px">Return To Shop</button>
 
-    <div class="d-flex justify-content-end">
+       
+
+    <div class="d-flex justify-content-between" style="margin-top: 80px;">
+
+        <form [formGroup]="couponsForm" (ngSubmit)="coupanAdd()">
+
+            <div  class="d-flex" style="gap: 16px;">
+                <div>
+                    <input class="rounded-3 border border-secondary" 
+                    formControlName="coupon"
+                      type="text" style="padding: 16px 80px 16px 24px;" placeholder="Coupons Code">
+                </div>
+                <div>
+                    <button style="padding: 16px 48px; background: var(--Button2, #DB4444);
+                    color: var(--Text, #FAFAFA);border: none;" type="submit">Apply Coupons</button>
+                </div>
+            </div>
+
+        </form>
+        
+
+
+
+
+
+
+
+
+
+
+
         <div class="border border-secondary d-flex flex-column " style="width: 470px;padding: 
         24px 32px;  row-gap: 8px;">
 
@@ -104,7 +134,8 @@
             </div>
             
             <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-danger " style="padding: 16px 48px;">Process to checkout</button>
+                <button type="button" class="btn btn-danger " style="padding: 16px 48px;">Process to checkout
+                 </button>
             </div>
             
 
