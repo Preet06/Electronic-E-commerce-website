@@ -73,7 +73,6 @@ export class CartComponent implements OnInit{
       this.coupanAll.push(CouponList[i].data());
      console.log("without sorting",CouponList[i].data())
        }
-
        this.totalPrice = this.authService.getTotalPrice();
        this.coupanAll.map((a:any)=>
       {
@@ -81,8 +80,6 @@ export class CartComponent implements OnInit{
         console.log("Inside",off,this.totalPrice);
        this.totalPrice = this.totalPrice - ( this.totalPrice * a['Off'] )/100 ;
       })
-
-
 
       })
       console.log("Length", this.coupanAll, Object.keys(this.coupanAll).length)
