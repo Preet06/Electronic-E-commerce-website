@@ -85,11 +85,6 @@ export class CartComponent implements OnInit{
       console.log("Length", this.coupanAll, Object.keys(this.coupanAll).length)
       let off = 0;
 
-      // this.coupanAll.map((a:any)=>
-      // {
-      //   off = off + a['Off'];
-      //   console.log(a);
-      // })
  
 
 
